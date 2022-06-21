@@ -1,7 +1,15 @@
 *{
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif ;
+}
+
+a{
+    text-decoration: none;
 }
 
 .padre{
@@ -10,32 +18,63 @@
 } 
 
     .header{
-        background: #000;
+        background: url(../images/bg-2.jpg);
+        background-position: center;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
     }
         .menu{
-            background: #2d4059;
+            background:rgba(0,0,0,0.1);
             display: flex;
             flex-flow: row nowrap;
-            height: 100px;
+            height: 60px;
             align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
         }
             .logo{
-                background: #ea5455;
-                flex: 1 1 auto;
-                height: 30px;
+               flex: 1 1 auto;
+               
             }
+                .logo a{
+                    color: rgba(255,255,255,1);
+                    font-size: 30px;
+                }
+
+                .logo a:hover{
+                    color: #343434;
+                }
+
             .nav{
-                background: #ea5455;
                 flex: 5 1 auto;
-                height: 30px;
+
             }
+                .nav a{
+                    color:rgba(255,255,255,1);
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+
+                .nav a:hover{
+                    color: #343434;
+                }
+
             .social{
-                background: #ea5455;
                 flex: 1 1 auto;
-                height: 30px;
+                display: flex;
             }
+
+                .social a{
+                    font-size: 18px;
+                    padding: 0 5px;
+                    color:rgba(255,255,255,1);
+                }
+
+                .social a:hover{
+                    color: #343434;               
+                }
 
     .texto-principal{
         background: #f07b3f;
